@@ -14,9 +14,19 @@ import { LocationList } from "./location/LocationList";
 export const ApplicationViews = () => {
   return (
     <>
-        <Route exact path="/">
-          <Home />
-        </Route>
+      <Route exact path="/">
+        <Home />
+      </Route>
+
+      <AnimalProvider>
+        <LocationProvider>
+          <CustomerProvider>
+            <Route exact path="/animals/create">
+              <AnimalForm />
+            </Route>
+          </CustomerProvider>
+        </LocationProvider>
+      </AnimalProvider>
 
       <AnimalProvider>
         <Route path="/animals">
