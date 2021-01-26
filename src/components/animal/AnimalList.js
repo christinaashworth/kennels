@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from "react";
-import { useHistory } from "react-router-dom"
+import { useHistory } from "react-router-dom";
 import { AnimalContext } from "./AnimalProvider";
 import { AnimalCard } from "./AnimalCard";
 import "./Animal.css";

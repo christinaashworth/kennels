@@ -13,7 +13,7 @@ export const EmployeeList = () => {
 
   }, []);
 
-  const history = useHistory()
+  const history = useHistory();
 
   return (
     <div className="employees">
