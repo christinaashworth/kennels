@@ -11,5 +11,10 @@ export const EmployeeCard = ({ employee }) => {
           { employee.name }
         </Link>
       </h3>
+      <div className="employee__location">
+        <Link to={`/employees/detail/${employee.location.id}`}>
+          { employee.location.name }
+        </Link>
+      </div>
   </section>
 )};
