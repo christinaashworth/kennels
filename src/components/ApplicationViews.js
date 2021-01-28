@@ -75,8 +75,8 @@ export const ApplicationViews = () => {
       <LocationProvider>
         <Route exact path="/locations">
           <article className="locations">
-          <LocationList />
-        </article> 
+            <LocationList />
+          </article> 
         </Route>
         <Route path="/locations/create">
           <LocationForm />
